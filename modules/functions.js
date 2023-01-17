@@ -1,6 +1,7 @@
-/* eslint-disable no-use-before-define */
 /* eslint-disable no-plusplus */
-/* eslint-disable radix */
+
+let index = 0;
+
 export default class Functions {
   constructor() {
     this.books = [];
@@ -9,7 +10,7 @@ export default class Functions {
   add(newbooks) {
     const getItems = JSON.parse(localStorage.getItem('books'));
     if (this.books.length > 0) {
-      index = parseInt(getItems[getItems.length - 1].id);
+      index = parseInt(getItems[getItems.length - 1].id, 10);
       index++;
     }
     newbooks.id = index;
@@ -19,9 +20,8 @@ export default class Functions {
   }
 
   remove(idValue) {
-    const book = this.books.filter((x) => x.id !== parseInt(idValue));
+    const book = this.books.filter((x) => x.id !== parseInt(idValue, 10));
     this.books = book;
     localStorage.setItem('books', JSON.stringify(this.books));
   }
 }
-let index = 0;
