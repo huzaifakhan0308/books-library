@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Combo&family=Poppins&display=swap");
+
+* {
+  color: black;
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid black;
+  width: 95%;
+  height: 10vh;
+  position: fixed;
+}
+
+nav h1 {
+  padding-left: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 20px;
+}
+
+nav .Add-new {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
+/* datetime */
+
+.dateTime-div {
+  display: flex;
+  margin-top: 11vh;
+  margin-left: 100vh;
+  position: absolute;
+}
+
+.dateTime-div span {
+  margin: 5px;
+}
+
+/* newbooks */
+
+.new-books-sections {
+  display: none;
+}
+
+.new-books-sections-appear {
+  display: flex;
+  justify-content: center;
+  margin-top: 15vh;
+  height: 70vh;
+  width: 100%;
+}
+
+.new-books-ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  border: 2px solid black;
+  overflow-y: scroll;
+}
+
+/* add-newbooks */
+
+.add-new-books-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 30vh;
+}
+
+.add-new-books-section-disappear {
+  display: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#title {
+  width: 30vh;
+  padding: 5px;
+}
+
+#author {
+  margin: 10px 0 10px 0;
+  width: 30vh;
+  padding: 5px;
+}
+
+.add-new-book-btn {
+  align-self: flex-end;
+  padding: 5px 15px 5px 15px;
+}
+
+/* js-classes */
+
+li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 97%;
+  margin: 10px;
+}
+
+div {
+  display: flex;
+  flex-direction: row;
+}
+
+.new-books-sections ul li h3 {
+  margin-left: 10px;
+}
+
+.Remove-button {
+  padding: 5px;
+}
+
+/* contact-section */
+
+.contact-form-section {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50vh;
+}
+
+.contact-form-section-appear {
+  display: flex;
+}
+
+/* footer */
+
+footer {
+  display: flex;
+  align-self: flex-end;
+  border: 2px solid black;
+  padding: 20px;
+  position: fixed;
+  width: 92%;
+  margin-bottom: 1vh;
+}
